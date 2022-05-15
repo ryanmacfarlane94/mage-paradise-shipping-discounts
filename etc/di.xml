@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\SalesRule\Model\Rule\Action\SimpleActionOptionsProvider">
+        <plugin name="append_shipping_discount_options" type="MageParadise\ShippingDiscounts\Plugin\ShippingDiscountOptions" />
+    </type>
+    <type name="Magento\SalesRule\Model\Rule\Action\Discount\CalculatorFactory">
+        <arguments>
+            <argument name="discountRules" xsi:type="array">
+                <item name="shipping_percent" xsi:type="string">MageParadise\ShippingDiscounts\Model\Rule\Action\Discount\ShippingPercentDiscount</item>
+                <item name="shipping_fixed_discount" xsi:type="string">MageParadise\ShippingDiscounts\Model\Rule\Action\Discount\ShippingFixedDiscount</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
