@@ -4,7 +4,7 @@
         <tab id="mageparadise" translate="label" sortOrder="500">
             <label>MageParadise</label>
         </tab>
-        <section id="shipping-discounts" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+        <section id="shipping_discounts" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
             <class>separator-top</class>
             <label>Shipping Discounts</label>
             <tab>mageparadise</tab>

@@ -26,12 +26,12 @@ class CustomConfigProvider implements ConfigProviderInterface
     public function getConfig()
     {
         $enabled = $this->scopeConfig->getValue(
-            'shipping-discounts/general/enable',
+            'shipping_discounts/general/enable',
             \Magento\Store\Model\ScopeInterface::SCOPE_STORE
         );
 
         $discountMessage = $this->scopeConfig->getValue(
-            'shipping-discounts/general/display_text',
+            'shipping_discounts/general/display_text',
             \Magento\Store\Model\ScopeInterface::SCOPE_STORE
         );
 
